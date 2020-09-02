@@ -1,0 +1,31 @@
+{
+    "name": "Meet Mail Switcher",
+    "version": "1.0",
+    "description": "Redirects Meet to your office mails",
+    "browser_action": {
+        "default_popup": "index.htm",
+        "default_icon": "128.png"
+    },
+    "icons":{
+        "32":"icon_s.png",
+        "48":"icon_l.png",
+        "128":"128.png"
+    },
+    "background": {
+        "scripts": [
+            "eventpage.js"
+        ],
+        "persistent": true
+    },
+    "manifest_version": 2,
+    "permissions": [
+        "tabs",
+        "storage",
+        "notifications",
+        "webRequest",
+        "webRequestBlocking",
+        "http://*/*",
+        "https://*/*",
+        "https://meet.google.com/*"
+    ]
+}
