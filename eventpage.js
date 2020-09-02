@@ -54,7 +54,7 @@ chrome.storage.sync.get(['googleAccountNumber', 'meet', 'classroom'], function (
 
         }
             , {
-                urls: ["https://classroom.google.com/*"],
+                urls: ["https://classroom.google.com/u/*/h","https://classroom.google.com/u/*/h/","https://classroom.google.com/"],
                 types: ["main_frame", "sub_frame", "stylesheet", "script", "image", "object", "xmlhttprequest", "other"]
             },
             ['blocking']
